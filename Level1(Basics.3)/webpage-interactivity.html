@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive webpage</title>
+    <link rel="stylesheet" href="webpage-interactivity.css">
+</head>
+<body>
+     <header>
+    <h1>Christopher Nyirongo</h1>
+    <p>Aspiring Web Developer & Computer Science Student</p>
+    <img src="christopher.jpg" class="profile-pic" alt="Profile Picture">
+</header>
+
+<main>
+    <section>
+        <h2>About Me</h2>
+        <p>
+        I am a passionate computer science student learning modern web technologies.
+        I enjoy building clean, functional interfaces and continuously improving my skills.
+       </p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <button id="toggleBtn">Show Skills</button>
+        <ul id="skillsList" style="display:none;">
+           <li>HTML & CSS</li>
+           <li>JavaScript</li>
+           <li>Java Basics</li>
+           <li>Web Design</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Choose a Skill</h2>
+        <select id="skillSelect">
+            <option value="">Select a skill</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <p id="skillOutput"></p>
+    </section>
+    
+    <section>
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">Portfolio Website</div>
+            <div class="project">Login System</div>
+            <div class="project">Java Mini Apps</div>
+        </div>
+    </section>
+    
+     <section>
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+     </section>
+</main>
+<footer>
+    © 2025 Christopher Nyirongo
+</footer>
+    <script src="webpage-interactivity.js"></script>
+</body>
+</html>
